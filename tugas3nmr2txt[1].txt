@@ -1,0 +1,22 @@
+program tabel;
+uses crt;
+var
+x:integer;
+sinus,cosinus:real;
+begin
+clrscr;
+writeln('***TABEL SINUS DAN COSINUS DALAM SATUAN DRAJAD***');
+writeln('***********************************');
+writeln('    x          sin(x)          cos(x)');
+writeln('-----------------------------------');
+x:=0;
+while X<=360 do
+begin
+sinus:=sin(x/57.2958);
+cosinus:=cos(x/57.2958);
+writeln(' ',x:5,'        ',sinus:5:2,'          ',cosinus:5:2,'');
+x:=x+30;;
+end;
+writeln('------------------------------------');
+readkey;
+end.
